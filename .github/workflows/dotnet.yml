@@ -6,8 +6,12 @@ name: .NET
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'src/Checklist.Api/**'
   pull_request:
     branches: [ "main" ]
+    paths:
+      - 'src/Checklist.Api/**'
 
 jobs:
   build:
